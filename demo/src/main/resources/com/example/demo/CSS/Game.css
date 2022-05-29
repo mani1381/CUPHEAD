@@ -1,0 +1,17 @@
+Pane {
+    -fx-background-image: url("../PNG/game/background.png");
+    -fx-padding: 20;
+    -fx-spacing: 10;
+    -fx-alignment: center;
+    -fx-font-size: 20
+}
+
+.root {
+    -fx-background-size: contain, contain, contain;
+    -fx-background-position: bottom, bottom, top;
+    -fx-background-repeat: repeat-x, repeat-x, repeat-x;
+    -fx-background-image:
+            url("../PNG/game/background.png"),
+            url("../PNG/game/background_down.png"),
+            url("../PNG/game/background_top.png");
+}

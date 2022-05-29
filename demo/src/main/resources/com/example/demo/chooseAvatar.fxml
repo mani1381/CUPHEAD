@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<!-- Main Borderpane start -->
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.View.MenuControllers.ChooseAvatar">
+
+    <!-- Beginning of the left part of the Borderpane -->
+    <left>
+
+        <!-- An AnchorPane in the Left BorderPane -->
+        <AnchorPane prefHeight="700.0" prefWidth="400.0" style="-fx-background-color: #A9A9A9;" BorderPane.alignment="CENTER">
+            <children>
+
+                <!-- Logo -->
+                <ImageView fitHeight="700.0" fitWidth="400.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@logo.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </left>
+    <!-- Ending of the left part of the Borderpane -->
+
+    <!-- Beginning of the bottom part of the Borderpane -->
+    <bottom>
+
+        <!-- Simple Copyright -->
+        <Label prefHeight="16.0" prefWidth="107.0" style="-fx-text-fill: #B9a9a9;" text="Cuphead © 2022" BorderPane.alignment="CENTER" />
+    </bottom>
+    <right>
+        <AnchorPane prefHeight="700.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+
+                <!-- The Beginning of Logo -->
+                <ImageView fitHeight="90.0" fitWidth="118.0" layoutX="258.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@cart.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="cancelButton" layoutX="502.0" layoutY="13.0" mnemonicParsing="false" onAction="#switchToProfileMenu" style="-fx-background-color: transparent; -fx-text-fill: #A9A9A9; -fx-border-width: 2; -fx-border-color: #A9A9A9; -fx-border-radius: 5;" text="Back">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+                <Line endX="502.0" endY="380.0" fill="DARKGRAY" layoutX="-5.0" layoutY="-208.0" opacity="0.5" startX="91.5" startY="380.0" stroke="#a8a8a8ad" strokeLineJoin="BEVEL" strokeWidth="3.0" />
+            <Label alignment="CENTER" layoutX="147.0" layoutY="113.0" prefHeight="34.0" prefWidth="290.0" text="Choose An Avatar">
+               <font>
+                  <Font name="SansSerif Regular" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="124.0" fitWidth="155.0" layoutX="87.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cart.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="129.0" fitWidth="148.0" layoutX="245.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cupHead.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="129.0" fitWidth="148.0" layoutX="409.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@goopy.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="129.0" fitWidth="148.0" layoutX="85.0" layoutY="392.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@kettle.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="129.0" fitWidth="148.0" layoutX="245.0" layoutY="392.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@kingDice.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="129.0" fitWidth="148.0" layoutX="404.0" layoutY="392.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@mugman.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="106.0" layoutY="341.0" mnemonicParsing="false" onAction="#chooseDevil" text="Devil" />
+            <Button layoutX="265.0" layoutY="341.0" mnemonicParsing="false" onAction="#chooseCuphead" text="Cuphead" />
+            <Button layoutX="441.0" layoutY="341.0" mnemonicParsing="false" onAction="#chooseGoopy" text="Goopy" />
+            <Button layoutX="106.0" layoutY="538.0" mnemonicParsing="false" onAction="#chooseKettle" text="Kettle" />
+            <Button layoutX="265.0" layoutY="538.0" mnemonicParsing="false" onAction="#chooseKingDice" text="King Dice" />
+            <Button layoutX="441.0" layoutY="538.0" mnemonicParsing="false" onAction="#chooseMugMan" text="Mug Man" />
+                <!-- The End of Signup form -->
+
+            </children>
+        </AnchorPane>
+    </right>
+    <!-- Ending of the left part of the Borderpane -->
+
+</BorderPane>

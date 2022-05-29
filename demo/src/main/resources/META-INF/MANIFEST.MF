@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Main-Class: com.example.demo.View.GameScreen
+Class-Path: ikonli-javafx-12.3.0.jar bootstrapfx-core-0.4.0.jar kotlin-s
+ tdlib-common-1.5.10.jar util-4.0.9.jar storage-4.0.9.jar javafx-control
+ s-18-mac.jar javafx-base-18-mac.jar fxgl-entity-11.17.jar javafx-media-
+ 18-mac.jar ikonli-core-12.3.0.jar javafx-web-11.0.2.jar controlsfx-11.1
+ .1.jar formsfx-core-11.3.2.jar fxgl-gameplay-11.17.jar jackson-databind
+ -2.12.1.jar javafx-media-18.jar jackson-annotations-2.12.1.jar javafx-g
+ raphics-18.jar javafx-fxml-18.jar gson-2.9.0.jar validatorfx-0.2.1.jar 
+ kotlin-stdlib-1.5.10-modular.jar audio-4.0.9.jar javafx-controls-18.jar
+  fxgl-io-11.17.jar lifecycle-4.0.9.jar javafx-fxml-18-mac.jar fxgl-scen
+ e-11.17.jar javafx-web-11.0.2-mac.jar javafx-base-18.jar tilesfx-11.48.
+ jar fxgl-core-11.17.jar javafx-graphics-18-mac.jar fxgl-11.17.jar lombo
+ k-1.18.24.jar jackson-core-2.12.1.jar annotations-13.0.jar
+

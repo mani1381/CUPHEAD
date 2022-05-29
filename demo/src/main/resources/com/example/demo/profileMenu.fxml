@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<!-- Main Borderpane start -->
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.View.MenuControllers.ProfileMenuController">
+
+    <!-- Beginning of the left part of the Borderpane -->
+    <left>
+
+        <!-- An AnchorPane in the Left BorderPane -->
+        <AnchorPane prefHeight="700.0" prefWidth="400.0" style="-fx-background-color: #A9A9A9;" BorderPane.alignment="CENTER">
+            <children>
+
+                <!-- Logo -->
+                <ImageView fitHeight="700.0" fitWidth="400.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@logo.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </left>
+    <!-- Ending of the left part of the Borderpane -->
+
+    <!-- Beginning of the bottom part of the Borderpane -->
+    <bottom>
+
+        <!-- Simple Copyright -->
+        <Label prefHeight="16.0" prefWidth="107.0" style="-fx-text-fill: #B9a9a9;" text="Cuphead © 2022" BorderPane.alignment="CENTER" />
+    </bottom>
+   <right>
+        <AnchorPane prefHeight="700.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+
+                <!-- The Beginning of Logo -->
+                <ImageView fitHeight="90.0" fitWidth="118.0" layoutX="258.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@cart.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="cancelButton" layoutX="502.0" layoutY="13.0" mnemonicParsing="false" onAction="#onCancelButtonClick" style="-fx-background-color: transparent; -fx-text-fill: #A9A9A9; -fx-border-width: 2; -fx-border-color: #A9A9A9; -fx-border-radius: 5;" text="Cancel">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="onMainMenu" layoutX="188.0" layoutY="125.0" mnemonicParsing="false" onAction="#onMainMenu" prefHeight="55.0" prefWidth="205.0" style="-fx-background-color: #24a0ed; -fx-text-fill: white; -fx-border-radius: 5; -fx-border-width: 2; -fx-border-color: #24a0ed;" text="Main Menu">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+                <!-- End of Login Form -->
+
+                <!-- A simple line Separator -->
+                <Line endX="502.0" endY="380.0" fill="DARKGRAY" layoutX="-11.0" layoutY="-169.0" opacity="0.5" startX="100.0" startY="380.0" stroke="#a8a8a8ad" strokeLineJoin="BEVEL" strokeWidth="3.0" />
+                <Button fx:id="logoutButton" layoutX="189.0" layoutY="234.0" mnemonicParsing="false" onAction="#logoutButton" prefHeight="35.0" prefWidth="206.0" style="-fx-background-color: #24a0ed; -fx-text-fill: white; -fx-border-radius: 5; -fx-border-width: 2; -fx-border-color: #24a0ed;" text="Logout">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+                <Line endX="502.0" endY="380.0" fill="DARKGRAY" layoutX="-11.0" layoutY="-87.0" opacity="0.5" startX="100.0" startY="380.0" stroke="#a8a8a8ad" strokeLineJoin="BEVEL" strokeWidth="3.0" />
+                <Button fx:id="deleteAccountButton" layoutX="192.0" layoutY="608.0" mnemonicParsing="false" onAction="#deleteAccountButton" prefHeight="32.0" prefWidth="200.0" style="-fx-background-color: #24a0ed; -fx-text-fill: white; -fx-border-radius: 5; -fx-border-width: 2; -fx-border-color: #24a0ed;" text="Delete Account">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+            <Line endX="502.0" endY="380.0" fill="DARKGRAY" layoutX="-7.0" layoutY="215.0" opacity="0.5" startX="91.5" startY="380.0" stroke="#a8a8a8ad" strokeLineJoin="BEVEL" strokeWidth="3.0" />
+            <Button fx:id="ChangeUsernameButton" layoutX="193.0" layoutY="367.0" mnemonicParsing="false" onAction="#onChangeUsernameButton" prefHeight="32.0" prefWidth="202.0" style="-fx-background-color: #24a0ed; -fx-text-fill: white; -fx-border-radius: 5; -fx-border-width: 2; -fx-border-color: #24a0ed;" text="Change Username">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Line endX="502.0" endY="380.0" fill="DARKGRAY" layoutX="-5.0" layoutY="36.0" opacity="0.5" startX="91.5" startY="380.0" stroke="#a8a8a8ad" strokeLineJoin="BEVEL" strokeWidth="3.0" />
+            <Button layoutX="20.0" layoutY="546.0" mnemonicParsing="false" onAction="#randomAvatar" prefHeight="32.0" prefWidth="147.0" style="-fx-background-color: #24a0ed; -fx-text-fill: white; -fx-border-radius: 5; -fx-border-width: 2; -fx-border-color: #24a0ed;" text="Random Avatar">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="signUpUsernameTextField" alignment="CENTER" layoutX="205.0" layoutY="310.0" prefHeight="32.0" prefWidth="174.0" promptText="Enter New Username" />
+            <ImageView fitHeight="33.0" fitWidth="32.0" layoutX="151.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@users.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="invalidSignupCredentials" alignment="CENTER" layoutX="151.0" layoutY="342.0" prefHeight="24.0" prefWidth="278.0" />
+            <Line endX="502.0" endY="380.0" fill="DARKGRAY" layoutX="-4.0" layoutY="148.0" opacity="0.5" startX="91.5" startY="380.0" stroke="#a8a8a8ad" strokeLineJoin="BEVEL" strokeWidth="3.0" />
+            <Button fx:id="ChangeUsernameButton1" layoutX="191.0" layoutY="481.0" mnemonicParsing="false" onAction="#onChangePasswordButton" prefHeight="31.0" prefWidth="203.0" style="-fx-background-color: #24a0ed; -fx-text-fill: white; -fx-border-radius: 5; -fx-border-width: 2; -fx-border-color: #24a0ed;" text="Change Password">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="signUpPasswordPasswordField" alignment="CENTER" layoutX="203.0" layoutY="426.0" prefHeight="32.0" prefWidth="174.0" promptText="Enter New Password" />
+            <Label fx:id="invalidChangePasswordCredentials" alignment="CENTER" layoutX="87.0" layoutY="456.0" prefHeight="25.0" prefWidth="410.0" />
+            <ImageView fitHeight="33.0" fitWidth="32.0" layoutX="151.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@password.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="203.0" layoutY="545.0" mnemonicParsing="false" onAction="#onChooseAvatar" prefHeight="35.0" prefWidth="194.0" style="-fx-background-color: #24a0ed; -fx-text-fill: white; -fx-border-radius: 5; -fx-border-width: 2; -fx-border-color: #24a0ed;" text="Choose Between Options">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="426.0" layoutY="546.0" mnemonicParsing="false" onAction="#start" prefHeight="32.0" prefWidth="147.0" style="-fx-background-color: #24a0ed; -fx-text-fill: white; -fx-border-radius: 5; -fx-border-width: 2; -fx-border-color: #24a0ed;" text="Choose Manully">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+                <!-- The End of Signup form -->
+
+            </children>
+        </AnchorPane>
+   </right>
+    <!-- Ending of the left part of the Borderpane -->
+
+</BorderPane>
